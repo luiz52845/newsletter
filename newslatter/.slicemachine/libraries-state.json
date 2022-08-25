@@ -1,0 +1,78 @@
+{
+  "slices": {
+    "components": {
+      "news_latter3": {
+        "library": "slices",
+        "id": "news_latter3",
+        "name": "NewsLatter3",
+        "description": "NewsLatter3",
+        "model": {
+          "id": "news_latter3",
+          "type": "SharedSlice",
+          "name": "NewsLatter3",
+          "description": "NewsLatter3",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "NewsLatter3",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Fallen",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Id incididunt consequat ea eu est aliqua incididunt. Ipsum ipsum irure consectetur velit. Pariatur amet ullamco dolore occaecat Lorem id aliqua dolor labore deserunt.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "news_latter3"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      }
+    }
+  }
+}
