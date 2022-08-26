@@ -1,4 +1,5 @@
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { ActiveLink } from '../ActiveLink';
@@ -11,7 +12,7 @@ export function Header() {
     return (
         <header className={styles.headerContainer}>
             <div className={styles.headerContent}>
-                <img src="/images/logo.svg" alt="newslatter" />
+                <Image width={176}  height={176} src="/images/logo.svg" alt="newslatter" />
                 <nav>
                     <ActiveLink activeClassName={styles.active} href='/'>
                         <a>Home</a>

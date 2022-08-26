@@ -10,6 +10,7 @@ import styles from '../post.module.scss';
 
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import { Console } from "console";
 
 
 interface PostPreviewProps {
@@ -33,6 +34,7 @@ export default function Post({ post }: PostPreviewProps) {
 
     }, [session])
 
+   
     return (
         <>
             <Head>
@@ -76,6 +78,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
     const prismic = getPrismicCLiet()
 
+    console.log("PREVIEW:", slug)
     const response = await prismic.getByUID('postId', String(slug), {})
 
     const post = {
